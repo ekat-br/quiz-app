@@ -20,3 +20,32 @@ header {
   left: 0;
   text-align: center;
 }
+
+ul {
+  list-style-type: none;
+}
+
+footer {
+  background: #27187e;
+  color: #f1f2f6;
+  height: 70px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.navigation-menu {
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+}
+
+.nav-button {
+  width: 100px;
+  color: #f1f2f6;
+  background-color: #758bfd;
+  border: 2px solid #657cf1;
+  text-align: center;
+  padding: 10px;
+}
