@@ -21,6 +21,10 @@ header {
   text-align: center;
 }
 
+ul {
+  list-style-type: none;
+}
+
 footer {
   background: #27187e;
   color: #f1f2f6;
@@ -34,15 +38,14 @@ footer {
 .navigation-menu {
   display: flex;
   justify-content: space-around;
-  align-items: center;
+  align-content: center;
 }
 
 .nav-button {
-  height: 40px;
   width: 100px;
   color: #f1f2f6;
   background-color: #758bfd;
   border: 2px solid #657cf1;
-  list-style-type: none;
   text-align: center;
+  padding: 10px;
 }
