@@ -6,9 +6,13 @@ Orange: #ff8600
 
 */
 
+/* === GENERELLES === */
+
 * {
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* === HEADER === */
 
 header {
   height: 80px;
@@ -19,11 +23,10 @@ header {
   right: 0;
   left: 0;
   text-align: center;
+  z-index: 1;
 }
 
-ul {
-  list-style-type: none;
-}
+/* === NAVIGATIONSLEISTE === */
 
 footer {
   background: #27187e;
@@ -31,21 +34,91 @@ footer {
   height: 70px;
   position: fixed;
   bottom: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
   left: 0;
   right: 0;
 }
 
-.navigation-menu {
-  display: flex;
-  justify-content: space-around;
-  align-content: center;
+h2 {
+  color: #27187e;
 }
 
-.nav-button {
+.show-answer-btn {
+  height: 50px;
   width: 100px;
-  color: #f1f2f6;
   background-color: #758bfd;
-  border: 2px solid #657cf1;
+  border: none;
+  color: #f1f2f6;
+  border-radius: 10px;
+  width: 150px;
+}
+
+.show-answer-btn:hover {
+  background-color: #ff8600;
+  border: none;
+  color: #f1f2f6;
+}
+
+/* === QUIZ CARD === */
+
+.card {
+  margin-top: 150px;
+  width: 70%;
+  margin-right: auto;
+  margin-left: auto;
+  border: 2px solid #27187e;
+  padding: 3% 10%;
+  scroll-margin-top: 100px;
+  position: relative;
   text-align: center;
-  padding: 10px;
+  border-radius: 20px;
+  margin-bottom: 100px;
+}
+
+.card-bookmark {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  height: 60px;
+  width: auto;
+}
+
+.card-bookmark:hover {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  height: 70px;
+  width: auto;
+}
+
+.category-tags {
+  display: flex;
+  left: 20px;
+  position: absolute;
+  left: 30px;
+  bottom: 10px;
+}
+
+.category-tags > p {
+  background: #ff8600;
+  margin-right: 10px;
+  padding: 5px;
+}
+
+.logo {
+  height: 50px;
+  width: auto;
+}
+
+.logo:hover {
+  height: 60px;
+}
+
+.active {
+  height: 50px;
+  width: auto;
+  border: 2px solid #ff8600;
 }
