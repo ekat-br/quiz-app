@@ -6,6 +6,13 @@ Orange: #ff8600
 
 */
 
+:root {
+  --color-darkblue: #27187e;
+  --color-skyblue: #758bfd;
+  --color-creme: #f1f2f6;
+  --color-orange: #ff8600;
+}
+
 /* === GENERELLES === */
 
 * {
@@ -16,8 +23,8 @@ Orange: #ff8600
 
 header {
   height: 80px;
-  background: #758bfd;
-  color: #f1f2f6;
+  background: var(--color-skyblue);
+  color: var(--color-creme);
   position: fixed;
   top: 0;
   right: 0;
@@ -29,8 +36,8 @@ header {
 /* === NAVIGATIONSLEISTE === */
 
 footer {
-  background: #27187e;
-  color: #f1f2f6;
+  background: var(--color-darkblue);
+  color: var(--color-creme);
   height: 70px;
   position: fixed;
   bottom: 0;
@@ -43,23 +50,23 @@ footer {
 }
 
 h2 {
-  color: #27187e;
+  color: var(--color-darkblue);
 }
 
 .show-answer-btn {
   height: 50px;
   width: 100px;
-  background-color: #758bfd;
+  background-color: var(--color-skyblue);
   border: none;
-  color: #f1f2f6;
+  color: var(--color-creme);
   border-radius: 10px;
   width: 150px;
 }
 
 .show-answer-btn:hover {
-  background-color: #ff8600;
+  background-color: var(--color-orange);
   border: none;
-  color: #f1f2f6;
+  color: var(--color-creme);
 }
 
 /* === QUIZ CARD === */
@@ -69,7 +76,7 @@ h2 {
   width: 70%;
   margin-right: auto;
   margin-left: auto;
-  border: 2px solid #27187e;
+  border: 2px solid var(--color-darkblue);
   padding: 3% 10%;
   scroll-margin-top: 100px;
   position: relative;
@@ -103,7 +110,7 @@ h2 {
 }
 
 .category-tags > p {
-  background: #ff8600;
+  background: var(--color-orange);
   margin-right: 10px;
   padding: 5px;
 }
@@ -120,5 +127,5 @@ h2 {
 .active {
   height: 50px;
   width: auto;
-  border: 2px solid #ff8600;
+  border: 2px solid var(--color-orange);
 }
